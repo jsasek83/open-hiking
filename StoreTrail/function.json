@@ -1,0 +1,23 @@
+{
+  "bindings": [
+    {
+      "authLevel": "function",
+      "type": "httpTrigger",
+      "direction": "in",
+      "name": "req",
+      "methods": [
+        "get",
+        "post"
+      ]
+    },
+    {
+      "type": "cosmosDB",
+      "name": "document",
+      "databaseName": "hikerr",
+      "collectionName": "hikes",
+      "createIfNotExists": false,
+      "connectionStringSetting": "hikerr-sql_DOCUMENTDB",
+      "direction": "out"
+    }
+  ]
+}

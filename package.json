@@ -1,0 +1,24 @@
+{
+  "name": "hiking-data",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "process-data":"node --stack-size=3000000 TransformTrailData/osmtogeojson.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jsasek83/hiking-data.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jsasek83/hiking-data/issues"
+  },
+  "homepage": "https://github.com/jsasek83/hiking-data#readme",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.2",
+    "domutils": "^1.7.0"
+  }
+}
